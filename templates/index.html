@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Flask Demo</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>AWS Flask Deployment Demo</h1>
+
+        <p>
+            This Flask application was built as part of my
+            hands-on AWS learning project.
+        </p>
+
+        <p>
+            The application can be deployed using Amazon EC2,
+            Gunicorn and Nginx.
+        </p>
+
+        <a href="/health">Check Application Health</a>
+    </div>
+
+</body>
+</html>

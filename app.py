@@ -1,11 +1,16 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def home():
-    return "Hello from my first AWS Flask project!"
+    return render_template("index.html")
+
+
+@app.route("/health")
+def health():
+    return {"status": "healthy"}, 200
 
 
 if __name__ == "__main__":
